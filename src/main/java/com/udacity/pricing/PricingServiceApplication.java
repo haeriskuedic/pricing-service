@@ -1,8 +1,9 @@
 package com.udacity.pricing;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.netflix.eureka.CloudEurekaClient;
 
 /**
  * This launches the Pricing Service as a Spring Boot application.
@@ -10,7 +11,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * TODO: Convert the application from a REST API to a microservice.
  */
 @SpringBootApplication
-@EnableEurekaServer
+@EnableEurekaClient
 public class PricingServiceApplication {
 
     public static void main(String[] args) {
