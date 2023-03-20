@@ -16,13 +16,8 @@ import java.nio.charset.StandardCharsets;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-//@RunWith(SpringRunner.class)
 @WebMvcTest(PricingController.class)
 public class Tests {
-
-    public static int VALID_ID = 19;
-
-    public static int INVALID_ID = 20;
 
     @Autowired
     private MockMvc mockMvc;
